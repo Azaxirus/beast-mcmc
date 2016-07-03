@@ -25,7 +25,7 @@
 
 package dr.oldevomodel.MSSD;
 
-import dr.app.beagle.evomodel.substmodel.SubstitutionModel;
+import dr.evomodel.substmodel.SubstitutionModel;
 import dr.evolution.tree.Tree;
 import dr.evomodel.tree.TreeModel;
 import dr.inference.model.AbstractModelLikelihood;

@@ -6,9 +6,9 @@ import dr.evolution.alignment.SitePatterns;
 import dr.inference.model.Parameter;
 import dr.oldevolmodelxml.substmodel.HKYParser;
 import dr.oldevolmodelxml.sitemodel.GammaSiteModelParser;
-import dr.app.beagle.evomodel.sitemodel.GammaSiteRateModel;
-import dr.app.beagle.evomodel.substmodel.FrequencyModel;
-import dr.app.beagle.evomodel.substmodel.nucleotide.HKY;
+import dr.evomodel.siteratemodel.GammaSiteRateModel;
+import dr.evomodel.substmodel.FrequencyModel;
+import dr.evomodel.substmodel.nucleotide.HKY;
 
 /**
  * @author Marc A. Suchard

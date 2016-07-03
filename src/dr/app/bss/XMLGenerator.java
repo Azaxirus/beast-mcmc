@@ -31,7 +31,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import dr.app.beagle.evomodel.parsers.MG94CodonModelParser;
+import dr.evomodelxml.substmodel.MG94CodonModelParser;
 import dr.app.beagle.tools.parsers.BeagleSequenceSimulatorParser;
 import dr.app.beagle.tools.parsers.PartitionParser;
 import dr.app.beauti.util.XMLWriter;
