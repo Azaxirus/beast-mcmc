@@ -1,5 +1,5 @@
 /*
- * NucModelType.java
+ * LikelihoodPartialsProvider.java
  *
  * Copyright (c) 2002-2016 Alexei Drummond, Andrew Rambaut and Marc Suchard
  *
@@ -23,20 +23,14 @@
  * Boston, MA  02110-1301  USA
  */
 
-package dr.app.beauti.types;
+package dr.app.beagle.evomodel.treelikelihood;
 
 /**
- * @author Alexei Drummond
+ * @author Marc A. Suchard
  */
-public enum NucModelType {
 
-    JC, HKY, GTR, TN93;
+public interface LikelihoodPartialsProvider extends LikelihoodScalingProvider {
 
-    public final String getXMLName() {
-        return name() + "Model";
-    }
-    
-    public String toString() {
-        return name();
-    }
+    void getPartials(int nodeNumber, double[] partialsVector);
+
 }

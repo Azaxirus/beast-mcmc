@@ -29,14 +29,17 @@ import java.io.Serializable;
 
 import dr.app.beagle.evomodel.branchmodel.BranchModel;
 import dr.app.beagle.evomodel.branchmodel.HomogeneousBranchModel;
+import dr.app.beagle.evomodel.parsers.GammaSiteModelParser;
 import dr.app.beagle.evomodel.sitemodel.GammaSiteRateModel;
-import dr.app.beagle.evomodel.substmodel.EmpiricalAminoAcidModel;
+import dr.app.beagle.evomodel.sitemodel.SiteRateModel;
+import dr.app.beagle.evomodel.substmodel.EmpiricalRateMatrix;
+import dr.app.beagle.evomodel.substmodel.aminoacid.*;
 import dr.app.beagle.evomodel.substmodel.FrequencyModel;
-import dr.app.beagle.evomodel.substmodel.GTR;
-import dr.app.beagle.evomodel.substmodel.GY94CodonModel;
-import dr.app.beagle.evomodel.substmodel.HKY;
-import dr.app.beagle.evomodel.substmodel.MG94HKYCodonModel;
-import dr.app.beagle.evomodel.substmodel.TN93;
+import dr.app.beagle.evomodel.substmodel.nucleotide.GTR;
+import dr.app.beagle.evomodel.substmodel.codon.GY94CodonModel;
+import dr.app.beagle.evomodel.substmodel.nucleotide.HKY;
+import dr.app.beagle.evomodel.substmodel.codon.MG94HKYCodonModel;
+import dr.app.beagle.evomodel.substmodel.nucleotide.TN93;
 import dr.evolution.coalescent.CoalescentSimulator;
 import dr.evolution.coalescent.ConstantPopulation;
 import dr.evolution.coalescent.DemographicFunction;
@@ -51,15 +54,6 @@ import dr.evolution.util.Units;
 import dr.evomodel.branchratemodel.BranchRateModel;
 import dr.evomodel.branchratemodel.DiscretizedBranchRates;
 import dr.evomodel.branchratemodel.StrictClockBranchRates;
-import dr.evomodel.sitemodel.SiteModel;
-import dr.evomodel.substmodel.Blosum62;
-import dr.evomodel.substmodel.CPREV;
-import dr.evomodel.substmodel.Dayhoff;
-import dr.evomodel.substmodel.EmpiricalRateMatrix;
-import dr.evomodel.substmodel.JTT;
-import dr.evomodel.substmodel.LG;
-import dr.evomodel.substmodel.MTREV;
-import dr.evomodel.substmodel.WAG;
 import dr.evomodel.tree.TreeModel;
 import dr.evoxml.TaxaParser;
 import dr.inference.distribution.ExponentialDistributionModel;
@@ -1045,10 +1039,10 @@ public class PartitionData implements Serializable {
 
 	public int siteRateModelIndex = 0;
 
-	public String siteRateModelIdref = SiteModel.SITE_MODEL;
+	public String siteRateModelIdref = GammaSiteModelParser.SITE_MODEL;
 
 	public void resetSiteRateModelIdref() {
-		this.siteRateModelIdref = SiteModel.SITE_MODEL;
+		this.siteRateModelIdref = GammaSiteModelParser.SITE_MODEL;
 	}
 	
 	public static String[] siteRateModels = { "No Model", //

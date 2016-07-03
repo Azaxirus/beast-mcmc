@@ -39,8 +39,8 @@ import dr.app.gui.components.WholeNumberField;
 import dr.app.util.OSType;
 import dr.evolution.datatype.DataType;
 import dr.evolution.datatype.Microsatellite;
-import dr.app.beauti.types.AminoAcidModelType;
-import dr.app.beauti.types.NucModelType;
+import dr.evomodel.substmodel.AminoAcidModelType;
+import dr.evomodel.substmodel.NucModelType;
 import jam.panels.OptionsPanel;
 
 import javax.swing.*;

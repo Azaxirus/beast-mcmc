@@ -1,7 +1,7 @@
 /*
  * ALSBeagleTreeLikelihood.java
  *
- * Copyright (c) 2002-2015 Alexei Drummond, Andrew Rambaut and Marc Suchard
+ * Copyright (c) 2002-2016 Alexei Drummond, Andrew Rambaut and Marc Suchard
  *
  * This file is part of BEAST.
  * See the NOTICE file distributed with this work for additional
@@ -23,17 +23,19 @@
  * Boston, MA  02110-1301  USA
  */
 
-package dr.app.beagle.evomodel.treelikelihood;
+package dr.app.beagle.evomodel.MSSD;
 
+import dr.app.beagle.evomodel.MSSD.AbstractObservationProcess;
 import dr.app.beagle.evomodel.branchmodel.BranchModel;
 import dr.app.beagle.evomodel.sitemodel.SiteRateModel;
+import dr.app.beagle.evomodel.treelikelihood.BeagleTreeLikelihood;
+import dr.app.beagle.evomodel.treelikelihood.LikelihoodPartialsProvider;
+import dr.app.beagle.evomodel.treelikelihood.PartialsRescalingScheme;
 import dr.evolution.alignment.PatternList;
-import dr.evomodel.MSSD.AbstractObservationProcess;
 import dr.evomodel.branchratemodel.BranchRateModel;
 import dr.evomodel.tree.TreeModel;
-import dr.evomodel.treelikelihood.LikelihoodPartialsProvider;
-import dr.evomodel.treelikelihood.ScaleFactorsHelper;
 import dr.evomodel.tipstatesmodel.TipStatesModel;
+import dr.evomodel.treelikelihood.ScaleFactorsHelper;
 import dr.inference.model.Model;
 import dr.inference.model.Parameter;
 
@@ -99,18 +101,19 @@ public class ALSBeagleTreeLikelihood extends BeagleTreeLikelihood implements Lik
         }
         System.err.println("TotalTime: "+totalTime);
         System.err.println("RealTime: "+realTime);*/
-        scaleFactorsHelper = new ScaleFactorsHelper(this, this,
-                treeModel, stateCount, patternCount, categoryCount);
+//        scaleFactorsHelper = new ScaleFactorsHelper(this, this,
+//                treeModel, stateCount, patternCount, categoryCount);
     }
 
     protected double calculateLogLikelihood() {
-        // Calculate the partial likelihoods
-        super.calculateLogLikelihood();
-        // get the frequency model
-        double[] freqs = substitutionModelDelegate.getRootStateFrequencies();
-        // let the observationProcess handle the rest
-        scaleFactorsHelper.resetScaleFactors();
-        return observationProcess.nodePatternLikelihood(freqs, this, scaleFactorsHelper);
+        throw new UnsupportedOperationException("Not implemented for BEAGLE");
+//        // Calculate the partial likelihoods
+//        super.calculateLogLikelihood();
+//        // get the frequency model
+//        double[] freqs = substitutionModelDelegate.getRootStateFrequencies();
+//        // let the observationProcess handle the rest
+//        scaleFactorsHelper.resetScaleFactors();
+//        return observationProcess.nodePatternLikelihood(freqs, this, scaleFactorsHelper);
     }
 
     protected void handleModelChangedEvent(Model model, Object object, int index) {
@@ -121,5 +124,5 @@ public class ALSBeagleTreeLikelihood extends BeagleTreeLikelihood implements Lik
         }
     }
 
-    final private ScaleFactorsHelper scaleFactorsHelper;
+//    final private ScaleFactorsHelper scaleFactorsHelper;
 }

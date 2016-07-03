@@ -30,7 +30,7 @@ import dr.app.beauti.options.PartitionSubstitutionModel;
 import dr.app.beauti.options.PartitionTreeModel;
 import dr.app.beauti.types.StartingTreeType;
 import dr.evolution.io.NexusImporter;
-import dr.app.beauti.types.NucModelType;
+import dr.evomodel.substmodel.NucModelType;
 
 import java.io.IOException;
 import java.io.Reader;

@@ -25,19 +25,19 @@
 
 package dr.app.beagle.evomodel.parsers;
 
+import dr.app.beagle.evomodel.MSSD.AbstractObservationProcess;
+import dr.app.beagle.evomodel.MSSD.AnyTipObservationProcess;
+import dr.app.beagle.evomodel.MSSD.SingleTipObservationProcess;
 import dr.app.beagle.evomodel.branchmodel.BranchModel;
 import dr.app.beagle.evomodel.sitemodel.GammaSiteRateModel;
 import dr.app.beagle.evomodel.substmodel.MutationDeathModel;
 import dr.app.beagle.evomodel.substmodel.SubstitutionModel;
-import dr.app.beagle.evomodel.treelikelihood.ALSBeagleTreeLikelihood;
+import dr.app.beagle.evomodel.MSSD.ALSBeagleTreeLikelihood;
 import dr.app.beagle.evomodel.treelikelihood.BeagleTreeLikelihood;
 import dr.app.beagle.evomodel.treelikelihood.PartialsRescalingScheme;
 import dr.evolution.alignment.PatternList;
 import dr.evolution.util.Taxon;
 import dr.evolution.util.TaxonList;
-import dr.evomodel.MSSD.AbstractObservationProcess;
-import dr.evomodel.MSSD.AnyTipObservationProcess;
-import dr.evomodel.MSSD.SingleTipObservationProcess;
 import dr.evomodel.branchratemodel.BranchRateModel;
 import dr.evomodel.tree.TreeModel;
 import dr.evomodel.tipstatesmodel.TipStatesModel;
