@@ -1,8 +1,10 @@
 package test.dr.evomodel.substmodel;
 
 import dr.evolution.datatype.HiddenNucleotides;
-import dr.evomodel.substmodel.*;
 import dr.inference.model.Parameter;
+import dr.oldevomodel.substmodel.CovarionHKY;
+import dr.oldevomodel.substmodel.FrequencyModel;
+import dr.oldevomodel.substmodel.SubstitutionModelUtils;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

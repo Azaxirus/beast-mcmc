@@ -55,14 +55,14 @@ import java.util.logging.Logger;
 
 public class ALSTreeLikelihoodParser extends BeagleTreeLikelihoodParser {
 
-    public static final String RECONSTRUCTING_TREE_LIKELIHOOD = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.LIKE_NAME;
+    public static final String RECONSTRUCTING_TREE_LIKELIHOOD = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.LIKE_NAME;
     public static final String RECONSTRUCTION_TAG_NAME = AncestralStateTreeLikelihoodParser.RECONSTRUCTION_TAG_NAME;
-    public static final String INTEGRATE_GAIN_RATE = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.INTEGRATE_GAIN_RATE;
-    public static final String OBSERVATION_TYPE = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_TYPE;
-    public static final String OBSERVATION_PROCESS = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_PROCESS;
-    public static final String OBSERVATION_TAXON = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_TAXON;
-    public static final String IMMIGRATION_RATE = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.IMMIGRATION_RATE;
-    public static final String ANY_TIP = dr.evomodelxml.MSSD.ALSTreeLikelihoodParser.ANY_TIP;
+    public static final String INTEGRATE_GAIN_RATE = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.INTEGRATE_GAIN_RATE;
+    public static final String OBSERVATION_TYPE = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_TYPE;
+    public static final String OBSERVATION_PROCESS = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_PROCESS;
+    public static final String OBSERVATION_TAXON = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.OBSERVATION_TAXON;
+    public static final String IMMIGRATION_RATE = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.IMMIGRATION_RATE;
+    public static final String ANY_TIP = dr.oldevolmodelxml.MSSD.ALSTreeLikelihoodParser.ANY_TIP;
 
     public String getParserName() {
         return RECONSTRUCTING_TREE_LIKELIHOOD;

@@ -37,7 +37,7 @@
 package dr.app.beagle.evomodel.substmodel;
 
 import dr.evolution.datatype.DataType;
-import dr.evomodelxml.substmodel.MutationDeathModelParser;
+import dr.oldevolmodelxml.substmodel.MutationDeathModelParser;
 import dr.inference.model.Model;
 import dr.inference.model.Parameter;
 

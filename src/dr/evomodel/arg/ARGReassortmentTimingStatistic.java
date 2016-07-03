@@ -25,17 +25,11 @@
 
 package dr.evomodel.arg;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.logging.Logger;
 
 import dr.evomodel.arg.ARGModel.Node;
-import dr.evomodel.arg.operators.ARGPartitioningOperator.PartitionChangedEvent;
 
-import dr.inference.model.Parameter;
 import dr.inference.model.Statistic;
-import dr.inference.operators.OperatorFailedException;
-import dr.math.MathUtils;
 import dr.xml.AbstractXMLObjectParser;
 import dr.xml.AttributeRule;
 import dr.xml.ElementRule;

@@ -30,7 +30,7 @@ import dr.evolution.alignment.PatternList;
 import dr.evolution.util.Taxon;
 import dr.evomodel.branchratemodel.BranchRateModel;
 import dr.evomodel.tree.TreeModel;
-import dr.evomodelxml.MSSD.SingleTipObservationProcessParser;
+import dr.oldevolmodelxml.MSSD.SingleTipObservationProcessParser;
 import dr.inference.model.Parameter;
 
 /**

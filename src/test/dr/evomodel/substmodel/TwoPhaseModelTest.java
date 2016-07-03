@@ -1,8 +1,10 @@
 package test.dr.evomodel.substmodel;
 
+import dr.oldevomodel.substmodel.AsymmetricQuadraticModel;
+import dr.oldevomodel.substmodel.OnePhaseModel;
+import dr.oldevomodel.substmodel.TwoPhaseModel;
 import junit.framework.TestCase;
 import dr.evolution.datatype.Microsatellite;
-import dr.evomodel.substmodel.*;
 import dr.inference.model.Parameter;
 
 /**

@@ -25,7 +25,6 @@
 
 package dr.app.beagle.evomodel.MSSD;
 
-import dr.app.beagle.evomodel.MSSD.AbstractObservationProcess;
 import dr.app.beagle.evomodel.branchmodel.BranchModel;
 import dr.app.beagle.evomodel.sitemodel.SiteRateModel;
 import dr.app.beagle.evomodel.treelikelihood.BeagleTreeLikelihood;
@@ -35,7 +34,6 @@ import dr.evolution.alignment.PatternList;
 import dr.evomodel.branchratemodel.BranchRateModel;
 import dr.evomodel.tree.TreeModel;
 import dr.evomodel.tipstatesmodel.TipStatesModel;
-import dr.evomodel.treelikelihood.ScaleFactorsHelper;
 import dr.inference.model.Model;
 import dr.inference.model.Parameter;
 

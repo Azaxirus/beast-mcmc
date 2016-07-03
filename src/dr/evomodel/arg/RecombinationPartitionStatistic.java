@@ -26,8 +26,6 @@
 package dr.evomodel.arg;
 
 import dr.evomodel.arg.ARGModel.Node;
-import dr.evomodel.arg.operators.ARGAddRemoveEventOperator;
-import dr.inference.model.CompoundParameter;
 import dr.inference.model.Statistic;
 import dr.xml.AbstractXMLObjectParser;
 import dr.xml.XMLObject;

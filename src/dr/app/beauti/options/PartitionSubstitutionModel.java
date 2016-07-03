@@ -32,8 +32,8 @@ import dr.evolution.datatype.AminoAcids;
 import dr.evolution.datatype.DataType;
 import dr.evolution.datatype.Microsatellite;
 import dr.evolution.datatype.Nucleotides;
-import dr.evomodel.substmodel.AminoAcidModelType;
-import dr.evomodel.substmodel.NucModelType;
+import dr.oldevomodel.substmodel.AminoAcidModelType;
+import dr.oldevomodel.substmodel.NucModelType;
 
 import java.util.ArrayList;
 import java.util.HashSet;

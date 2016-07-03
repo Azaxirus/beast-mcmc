@@ -28,7 +28,7 @@ package dr.app.beauti.util;
 import dr.app.beauti.options.BeautiOptions;
 import dr.app.beauti.options.PartitionSubstitutionModel;
 import dr.app.beauti.options.PartitionTreeModel;
-import dr.evomodel.substmodel.NucModelType;
+import dr.oldevomodel.substmodel.NucModelType;
 import dr.app.beauti.types.StartingTreeType;
 import dr.evolution.alignment.Alignment;
 import dr.evolution.alignment.CharSetAlignment;

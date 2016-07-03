@@ -27,7 +27,7 @@ package dr.app.beagle.evomodel.parsers;
 
 import dr.app.beagle.evomodel.substmodel.FrequencyModel;
 import dr.app.beagle.evomodel.substmodel.nucleotide.TN93;
-import dr.evomodel.substmodel.NucModelType;
+import dr.oldevomodel.substmodel.NucModelType;
 import dr.inference.model.Parameter;
 import dr.xml.*;
 
