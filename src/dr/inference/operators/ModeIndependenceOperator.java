@@ -236,7 +236,7 @@ public class ModeIndependenceOperator extends AbstractCoercableOperator {
         }
 
         public Class getReturnType() {
-            return MCMCOperator.class;
+            return ModeIndependenceOperator.class;
         }
 
         public XMLSyntaxRule[] getSyntaxRules() {
